@@ -34,7 +34,7 @@ jobs:
             ${{ runner.os }}-sonar
 
       - name: Build and Analyze
-        working-directory: Springboot/generalapp
+        working-directory: .
 
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
